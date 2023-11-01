@@ -4,10 +4,10 @@ const deviceHeight = Dimensions.get('window').height;
 
 const styles = StyleSheet.create({
     container: {
-        width: deviceWidth * 0.96,
-        height: deviceHeight * 0.12,
-        backgroundColor: 'black',
-        marginLeft:'2%',
+        width: deviceWidth * 0.93,
+        height: deviceHeight * 0.20,
+        backgroundColor: 'white',
+        marginLeft:'3%',
         borderRadius:3,
        // alignItems:'center',
         flexDirection:'row',

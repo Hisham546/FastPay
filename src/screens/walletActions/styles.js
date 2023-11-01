@@ -6,10 +6,10 @@ const getFontSize = size => size / fontScale;
 
 const styles = StyleSheet.create({
     container: {
-        width: deviceWidth * 0.96,
+        width: deviceWidth * 0.93,
         height: deviceHeight * 0.12,
         backgroundColor: 'black',
-        marginLeft:'2%',
+        marginLeft:'3%',
         borderRadius:3,
        // alignItems:'center',
         flexDirection:'row',

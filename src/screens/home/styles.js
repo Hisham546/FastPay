@@ -12,8 +12,14 @@ const styles = StyleSheet.create({
     },
     headerView: {
         width: deviceWidth,
-        height: (deviceHeight * 0.4),
+        height: (deviceHeight * 0.3),
 
+
+
+    },
+    secondView: {
+        width: deviceWidth,
+        height: (deviceHeight * 0.7),
 
     },
     userNameView: {
@@ -44,19 +50,19 @@ const styles = StyleSheet.create({
         color: 'black',
         fontSize: 20,
         fontWeight: '500',
-        marginLeft:'2%'
+        marginLeft: '2%'
 
     },
-    normalTexts:{
-      color:'gray',
-      fontSize:13,
-      fontWeight:'400'
+    normalTexts: {
+        color: 'gray',
+        fontSize: 13,
+        fontWeight: '400'
 
     },
-    nameTexts:{
-        color:'black',
-        fontSize:17,
-        fontWeight:'500'    
+    nameTexts: {
+        color: 'black',
+        fontSize: 17,
+        fontWeight: '500'
     }
 
 });

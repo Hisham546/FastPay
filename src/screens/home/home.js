@@ -9,7 +9,7 @@ import {
     from "react-native";
 import styles from "./styles";
 import { WalletActions } from "../walletActions/walletActions";
-
+import Miscellaneous from "../miscellaneous/miscellaneous";
 export default function Home() {
     return (
 
@@ -22,13 +22,17 @@ export default function Home() {
                         <Text style={styles.normalTexts}>Your available balance</Text>
                     </View>
                     <View style={styles.balanceView}>
-                        <Text style={[styles.nameTexts,{fontSize:20}]}> ₹ 4,590.00</Text>
+                        <Text style={[styles.nameTexts, { fontSize: 20 }]}> ₹ 4,590.00</Text>
                     </View>
                 </View>
 
                 <WalletActions />
+                
             </View>
-           
+            <View style={styles.secondView}>
+                <Miscellaneous />
+                </View>
+
         </View>
     )
 

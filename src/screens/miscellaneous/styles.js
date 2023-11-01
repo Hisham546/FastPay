@@ -7,12 +7,20 @@ const styles = StyleSheet.create({
         width: deviceWidth * 0.93,
         height: deviceHeight * 0.20,
         backgroundColor: 'white',
-        marginLeft:'3%',
-        borderRadius:3,
-       // alignItems:'center',
-        flexDirection:'row',
-       // justifyContent:'space-around'
+        marginLeft: '3%',
+        borderRadius: 3,
+        // alignItems:'center',
+        flexDirection: 'row',
+        // justifyContent:'space-around'
     },
+    miscView1: {
+        width: deviceWidth * 0.93,
+        height: deviceHeight * 0.10,
+        backgroundColor:'blue',
+    },
+    miscView2: {
+
+    }
 
 
 });

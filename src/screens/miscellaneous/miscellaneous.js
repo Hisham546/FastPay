@@ -12,7 +12,9 @@ import MaterialIcon from 'react-native-vector-icons/MaterialCommunityIcons';
 
 export default function Miscellaneous() {
     return (
-      <View style={styles.container}></View>
-        )
+        <View style={styles.container}>
+            <View style={styles.miscView1}></View>
+        </View>
+    )
 
-    }
+}

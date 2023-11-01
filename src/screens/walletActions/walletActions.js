@@ -15,9 +15,18 @@ import MaterialIcon from 'react-native-vector-icons/MaterialCommunityIcons';
 export const WalletActions = () => {
     return (
         <View style={styles.container}>
-            <MaterialIcon name="plus-circle-outline" color={'white'} size={25} />
-
-            <MaterialIcon name="tray-arrow-down" color={'white'} size={25} />
+            <View style={styles.topup}>
+                <MaterialIcon name="plus-circle-outline" color={'white'} size={25} />
+                <Text
+                 numberOfLines={1}
+                 adjustsFontSizeToFit
+                 
+                style={styles.walletTexts}>Top Up</Text>
+            </View>
+            <View style={styles.topup}>
+                <MaterialIcon name="tray-arrow-down" color={'white'} size={25} />
+                <Text style={styles.walletTexts}>Withdraw</Text>
+            </View>
         </View>
     )
 }

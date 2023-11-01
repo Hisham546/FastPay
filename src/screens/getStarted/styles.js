@@ -23,17 +23,16 @@ const styles = StyleSheet.create({
 
     },
     mainHeaderView: {
-        width: (deviceHeight * 0.5),
+        width: (deviceWidth * 0.96),
         height: (deviceHeight * 0.2),
         marginLeft: '2%',
-
         justifyContent: 'center',
         alignItems: 'center'
 
     },
     mainText: {
         color: 'black',
-        fontSize: deviceWidth * 0.06,
+        fontSize: 20,
         fontWeight: '500'
 
 
@@ -45,7 +44,7 @@ const styles = StyleSheet.create({
 
     },
     buttonView: {
-        width: (deviceHeight * 0.5),
+        width: (deviceWidth * 0.96),
         height: (deviceHeight * 0.2),
         marginLeft: '2%',
 
@@ -53,7 +52,7 @@ const styles = StyleSheet.create({
         alignItems: 'center'
     },
     loginButton: {
-        width: (deviceHeight * 0.45),
+        width: (deviceWidth * 0.90),
         height: '25%',
         backgroundColor: 'black',
         borderRadius: 4,
@@ -62,7 +61,7 @@ const styles = StyleSheet.create({
 
     },
     signupButton: {
-        width: (deviceHeight * 0.45),
+        width: (deviceWidth * 0.90),
         height: '25%',
         backgroundColor: 'white',
         borderRadius: 4,

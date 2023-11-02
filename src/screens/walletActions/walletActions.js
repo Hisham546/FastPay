@@ -9,19 +9,27 @@ import {
     from "react-native";
 import styles from "./styles";
 import MaterialIcon from 'react-native-vector-icons/MaterialCommunityIcons';
+import { TopUpModal } from "../../components/topUpModal";
 
 
 
 export const WalletActions = () => {
+
+    const [isTopUpOpen, setTopUpOpen] = useState(false);
+    const openModal = () => {
+        setTopUpOpen(true);
+    };
     return (
         <View style={styles.container}>
             <View style={styles.topup}>
+                <TouchableOpacity onPress={() => openModal()}>
                 <MaterialIcon name="plus-circle-outline" color={'white'} size={25} />
+                </TouchableOpacity>
                 <Text
-                 numberOfLines={1}
-                 adjustsFontSizeToFit
-                 
-                style={styles.walletTexts}>Top Up</Text>
+                    numberOfLines={1}
+                    adjustsFontSizeToFit
+
+                    style={styles.walletTexts}>Top Up</Text>
             </View>
             <View style={styles.topup}>
                 <MaterialIcon name="cellphone" color={'white'} size={25} />
@@ -31,7 +39,9 @@ export const WalletActions = () => {
                 <MaterialIcon name="tray-arrow-down" color={'white'} size={25} />
                 <Text style={styles.walletTexts}>Withdraw</Text>
             </View>
-            
+           <TopUpModal
+            isTopUpOpen={isTopUpOpen}
+           />
         </View>
     )
 }

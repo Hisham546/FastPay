@@ -24,9 +24,14 @@ export const WalletActions = () => {
                 style={styles.walletTexts}>Top Up</Text>
             </View>
             <View style={styles.topup}>
+                <MaterialIcon name="cellphone" color={'white'} size={25} />
+                <Text style={styles.walletTexts}>Send</Text>
+            </View>
+            <View style={styles.topup}>
                 <MaterialIcon name="tray-arrow-down" color={'white'} size={25} />
                 <Text style={styles.walletTexts}>Withdraw</Text>
             </View>
+            
         </View>
     )
 }

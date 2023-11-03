@@ -16,6 +16,7 @@ import { TopUpModal } from "../../components/topUpModal";
 export const WalletActions = () => {
 
     const [isTopUpOpen, setTopUpOpen] = useState(false);
+
     const openModal = () => {
         setTopUpOpen(true);
     };
@@ -23,7 +24,7 @@ export const WalletActions = () => {
         <View style={styles.container}>
             <View style={styles.topup}>
                 <TouchableOpacity onPress={() => openModal()}>
-                <MaterialIcon name="plus-circle-outline" color={'white'} size={25} />
+                    <MaterialIcon name="plus-circle-outline" color={'white'} size={25} />
                 </TouchableOpacity>
                 <Text
                     numberOfLines={1}
@@ -39,10 +40,10 @@ export const WalletActions = () => {
                 <MaterialIcon name="tray-arrow-down" color={'white'} size={25} />
                 <Text style={styles.walletTexts}>Withdraw</Text>
             </View>
-           <TopUpModal
-            isTopUpOpen={isTopUpOpen}
-            closeModal={() => setTopUpOpen(false)}
-           />
+            <TopUpModal
+                isTopUpOpen={isTopUpOpen}
+                closeModal={() => setTopUpOpen(false)}
+            />
         </View>
     )
 }

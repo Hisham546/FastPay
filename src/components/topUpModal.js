@@ -1,18 +1,8 @@
 import React, { useRef, useEffect } from 'react';
 import { View, Text, TouchableOpacity,Modal, StyleSheet,Pressable } from 'react-native';
 //import BottomSheet from '@gorhom/bottom-sheet';
-export const TopUpModal = ({ isTopUpOpen }) => {
-    //const modalizeRef = useRef < Modalize > (null);
-
-    // const bottomSheetRef  = useRef(null);
-
-    // useEffect(() => {
-    //     if (isTopUpOpen) {
-    //         bottomSheetRef.current?.open();
-    //     } else {
-    //         bottomSheetRef.current?.close();
-    //     }
-    // }, [isTopUpOpen]);
+export const TopUpModal = props => {
+ const {isTopUpOpen,closeModal} =props
     return (
      
             <View style={styles.centeredView}>
@@ -29,7 +19,7 @@ export const TopUpModal = ({ isTopUpOpen }) => {
                     <Text style={styles.modalText}>Hello World!</Text>
                     <Pressable
                       style={[styles.button, styles.buttonClose]}
-                      onPress={() => !isTopUpOpen}>
+                      onPress={closeModal}>
                       <Text style={styles.textStyle}>Hide Modal</Text>
                     </Pressable>
                   </View>

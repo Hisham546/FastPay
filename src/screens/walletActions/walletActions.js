@@ -41,6 +41,7 @@ export const WalletActions = () => {
             </View>
            <TopUpModal
             isTopUpOpen={isTopUpOpen}
+            closeModal={() => setTopUpOpen(false)}
            />
         </View>
     )

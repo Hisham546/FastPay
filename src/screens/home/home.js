@@ -10,7 +10,26 @@ import {
 import styles from "./styles";
 import { WalletActions } from "../walletActions/walletActions";
 import Miscellaneous from "../miscellaneous/miscellaneous";
+import { topupAmount } from "../../services/api/apiFunction";
+import { useQuery } from '@tanstack/react-query';
+
 export default function Home() {
+
+        useEffect(() => {
+            const fetchData = async () => {
+                const response = await topupAmount();
+                console.log(response, '.........api response');
+            };
+    
+            fetchData();
+        }, []);
+
+    // const { data, error, isLoading } = useQuery({
+
+    //     queryKey: ['addedAmount'],
+    //     topupAmount
+    // });
+    // console.log(data)
     return (
 
         <View style={styles.container}>
@@ -27,11 +46,11 @@ export default function Home() {
                 </View>
 
                 <WalletActions />
-                
+
             </View>
             <View style={styles.secondView}>
                 <Miscellaneous />
-                </View>
+            </View>
 
         </View>
     )
